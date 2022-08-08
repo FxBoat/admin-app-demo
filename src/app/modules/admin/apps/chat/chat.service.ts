@@ -30,6 +30,7 @@ export class ChatService
      */
     get chat$(): Observable<Chat>
     {
+        console.log(this._chat.asObservable());
         return this._chat.asObservable();
     }
 
@@ -38,6 +39,7 @@ export class ChatService
      */
     get chats$(): Observable<Chat[]>
     {
+        console.log(this._chats.asObservable());
         return this._chats.asObservable();
     }
 
@@ -46,6 +48,7 @@ export class ChatService
      */
     get contact$(): Observable<Contact>
     {
+        console.log(this._contact.asObservable());
         return this._contact.asObservable();
     }
 
@@ -54,6 +57,7 @@ export class ChatService
      */
     get contacts$(): Observable<Contact[]>
     {
+        console.log(this._contacts.asObservable());
         return this._contacts.asObservable();
     }
 
@@ -62,6 +66,7 @@ export class ChatService
      */
     get profile$(): Observable<Profile>
     {
+        console.log(this._profile.asObservable());
         return this._profile.asObservable();
     }
 
